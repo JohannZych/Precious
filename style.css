@@ -1,0 +1,109 @@
+:root{
+    --ringX3: 54px;
+    --ringX4: 42px;
+    --ringX5: 24px;
+    --ringX6: 0px;
+    --ringX7: -24px;
+    --ringX8: -48px;
+}
+body{
+    background-color: antiquewhite;
+    font-family:cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.first{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.find{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring1 {
+    width: 40px;
+    height: 40px;
+    border: solid 4px #FF8C00;
+    border-radius: 40px;
+    box-shadow: 2px 2px 4px #b36200;
+    margin: 20px;
+  }
+  
+  .ring2 {
+    width: 100px;
+    height: 100px;
+    border: solid 10px #FCCA02;
+    border-radius: 100px;
+    box-shadow: 5px 5px 4px #b08d01;
+    margin: 20px;
+  }
+  .ring3 {
+    width: 36px;
+    height: 36px;
+    border: solid 3.6px #363636;
+    border-radius: 36px;
+    box-shadow: 1.8px 1.8px 4px #101010;
+    transform: translateX(var(--ringX3));
+  }
+  
+  .ring4 {
+    width: 48px;
+    height: 48px;
+    border: solid 4.8px #363636;
+    border-radius: 48px;
+    box-shadow: 2.4px 2.4px 4px #101010;
+    transform: translateX(var(--ringX4));
+  }
+  
+  .ring5 {
+    width: 60px;
+    height: 60px;
+    border: solid 6px #363636;
+    border-radius: 60px;
+    box-shadow: 3px 3px 4px #101010;
+    transform: translateX(var(--ringX5));
+  }
+  
+  .ring6 {
+    width: 72px;
+    height: 72px;
+    border: solid 7.2px #363636;
+    border-radius: 72px;
+    box-shadow: 3.6px 3.6px 4px #101010;
+    transform: translateX(var(--ringX6));
+  }
+  
+  .ring7 {
+    width: 84px;
+    height: 84px;
+    border: solid 8.4px #363636;
+    border-radius: 84px;
+    box-shadow: 4.2px 4.2px 4px #101010;
+    transform: translateX(var(--ringX7));
+  }
+  
+  .ring8 {
+    width: 96px;
+    height: 96px;
+    border: solid 9.6px #363636;
+    border-radius: 96px;
+    box-shadow: 4.8px 4.8px 4px #101010;
+    transform: translateX(var(--ringX8));
+  }

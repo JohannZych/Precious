@@ -1,0 +1,32 @@
+@mixin ring ($rayon, $color, $blur) {
+    width: $rayon;
+    height: $rayon;
+    border: solid $rayon/10 $color;
+    border-radius: $rayon;
+    box-shadow: $rayon/20 $rayon/20 $blur darken($color, 15);
+    margin: 20px;
+}
+
+.ring1{
+    @include ring(40px, #FF8C00, 4px);
+}
+
+
+.ring2{
+    @include ring(100px, #FCCA02, 4px);
+}
+
+@mixin ringChain ($rayon, $color, $blur) {
+    width: $rayon;
+    height: $rayon;
+    border: solid $rayon/10 $color;
+    border-radius: $rayon;
+    box-shadow: $rayon/20 $rayon/20 $blur darken($color, 15);
+}
+
+@for $i from 3 through 8{
+    .ring#{$i}{
+    @include ringChain($i*12px, #363636, 4px);
+    transform: translateX(var(--ringX#{$i}));
+    }
+}
